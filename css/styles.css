@@ -1,0 +1,107 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 1rem;
+  z-index: 500;
+  transition: ease-in-out 0.3s;
+}
+
+[aria-controls="navbarDropdown"] {display: none;}
+
+.navbar .container,
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {justify-content: space-between;}
+
+.navbar-brand {width: 10rem;}
+
+.navbar-nav {
+  flex: 0.6;
+  justify-content: space-evenly;
+}
+
+.nav-link a {color: var(--text);} 
+.nav-link #buy {color: var(--white);}
+
+.background{
+  background-image: conic-gradient( at 66% 67%, var(--off-white) 7.5%, var(--contrast) 7.5%, var(--contrast) 23%, var(--white) 23%, var(--white) 73%, var(--off-white) 73%);
+}
+
+.background .container {
+  padding-top: var(--size-150);
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header-text h2 {
+  font-weight: 400;
+  font-size: var(--size-40);
+  width: 21.25rem;
+  margin-bottom: 1rem;
+}
+
+.header-text p {
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.header-text a {color: var(--white);}
+
+.header-text span {
+  color: var(--main-btn);
+  padding-left: 2rem;
+}
+
+.header-icons {flex: 0.7;}
+
+.icon-wrapper {
+  width: 5rem;
+  box-shadow: 1px 1px 10px #888;
+  border-radius: 50px;
+  padding: 1.25rem;
+  background-color: var(--white);
+  position: relative;
+}
+
+.small {
+  padding: 0.75rem;
+  width: 4rem;
+}
+
+.google {
+  top: -5%;
+  left: 10%;
+}
+
+.atlassian {
+  top: -17%;
+  left: 35%;
+}
+
+.asana {
+  top: -32%;
+  left: 80%;
+}
+
+.paypal {top: -15%;}
+
+.weave {
+  top: -30%;
+  left: 55%;
+}
+
+.drive {
+  top: -20%;
+  left: 25%;
+}
+
+.calendar {
+  top: -25%;
+  left: 75%;
+}
