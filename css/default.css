@@ -53,6 +53,7 @@ img {
   width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+  margin-bottom: var(--size-150);
 }
 
 .btn {

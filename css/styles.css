@@ -1,3 +1,5 @@
+/*Navigation*/
+
 .navbar {
   position: fixed;
   top: 0;
@@ -28,6 +30,8 @@
 .nav-link a {color: var(--text);} 
 .nav-link #buy {color: var(--white);}
 
+/*Section 1*/
+
 .background{
   background-image: conic-gradient( at 66% 67%, var(--off-white) 7.5%, var(--contrast) 7.5%, var(--contrast) 23%, var(--white) 23%, var(--white) 73%, var(--off-white) 73%);
 }
@@ -36,6 +40,7 @@
   padding-top: var(--size-150);
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
 
@@ -104,7 +109,6 @@
   left: 75%;
 }
 
-.kb {margin-bottom: var(--size-150);}
 .section-header {
   text-align: center;
   font-size: var(--size-30);
@@ -117,6 +121,8 @@
   color: var(--text);
   margin-bottom: var(--size-100);
 }
+
+/*Benefits Section*/
 
 .benefits {
   display: grid;
@@ -144,10 +150,11 @@
   font-weight: 700;
 }
 
+/*Prospective Section*/
+
 .prospective  {
   display: flex;
   background-color: rgba(240, 248, 255, 0.5);
-  margin-bottom: var(--size-100);
   padding: 0;
 }
 
@@ -164,11 +171,11 @@
 
 .prospective-text a {margin-left: var(--size-50);}
 
-.why {margin-bottom: var(--size-150);}
+/*Why Section*/
 
 .reasons-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .circle-outer {
@@ -194,3 +201,80 @@
   font-size: 1.3rem;
   font-weight: 450;
 }
+
+/*Video Section*/
+
+.video {position: relative;}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1.3rem 1.6rem;
+  background-color: var(--white);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50px;
+  box-shadow: 0 0 10px var(--text);
+}
+
+.play-btn i {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+/*Director Highlight Section*/
+.director-highlight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--size-50);
+  align-items: center;
+}
+.director-image {position: relative;}
+
+.dots {
+  position: absolute;
+  width: 14rem;
+  z-index: -10;
+  top: 10rem;
+  left: -1rem;
+}
+
+.director {
+  width: 35rem;
+  padding: 0 var(--size-30);
+}
+
+.director-info img {width: 7rem;}
+
+.quote {
+  font-size: var(--size-25);
+  font-weight: 400;
+  padding: var(--size-50) 0;
+}
+
+.name {
+  font-size: var(--size-20);
+  font-weight: 500;
+}
+
+.title {
+  font-weight: 500;
+  color: var(--text);
+} 
+
+/*Companies Section*/
+.companies h3 {
+  text-align: center;
+  color: var(--text);
+  font-size: var(--size-25);
+  text-transform: uppercase;
+  margin-bottom: var(--size-50);
+}
+
+.company-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-logos img {width: var(--size-150);}
