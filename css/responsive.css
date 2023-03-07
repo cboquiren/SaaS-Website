@@ -1,0 +1,108 @@
+@media screen and (max-width: 768px){
+
+
+  /*Navbar*/
+  [aria-controls="navbarDropdown"] {
+    display:block;
+  }
+
+  [aria-expanded="false"] ~ .nav .navbar-nav-wrapper {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ .nav {
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    padding-top: var(--size-10);
+    height: var(--size-60);
+  }
+
+  [aria-expanded="true"] ~ .nav .navbar-nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--size-60);
+    height: var(--size-150);
+    background-color: var(--white);
+    width: 100%;
+  }
+
+  [aria-expanded="true"] ~ .nav .navbar-nav-wrapper .navbar-nav {width: 100%;}
+  [aria-expanded="true"] ~ .nav .navbar-nav-wrapper #buy {width: 15%;}
+
+
+  /*Section 1*/
+  .background .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-icons {width: 100%;}  
+
+
+  /*Benefits Section*/
+  .benefits {grid-template-columns: repeat(2, 1fr)}
+
+
+  /*Prospective Section*/
+  .prospective {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  /*Director Highlight Section*/
+  .director-highlight {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .director-image {margin-bottom: var(--size-100);}
+  .dots {top: 12rem;}
+  .quote {padding: var(--size-50);}
+
+
+  /*Companies Section*/
+  .company-logos img {width: var(--size-100);}
+
+
+  /*Pricing*/
+  .pricing {flex-direction: column;}
+  .price {justify-content: center;}
+
+  .benefit-card,
+  #credit {
+    text-align: center;
+  }
+
+
+  /*Survey*/
+  .survey {flex-direction: column;}
+  
+  .interest {
+    display: flex;
+    padding-top: var(--size-40);
+  }
+
+  .hire-us-wrapper {
+    flex: 1;
+    padding-right: var(--size-60);
+  }
+
+  .people {flex: 0.5;}
+  .headshots,
+  .hire-us,
+  .hire-us-wrapper > p {width: 100%;}
+
+
+  /*Footer*/
+  .links-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+  }
+}
