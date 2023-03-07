@@ -33,7 +33,7 @@
   }
 
   [aria-expanded="true"] ~ .nav .navbar-nav-wrapper .navbar-nav {width: 100%;}
-  [aria-expanded="true"] ~ .nav .navbar-nav-wrapper #buy {width: 15%;}
+  [aria-expanded="true"] ~ .nav .navbar-nav-wrapper #buy {width: 25%;}
 
 
   /*Section 1*/
@@ -42,11 +42,15 @@
     align-items: center;
   }
 
-  .header-icons {width: 100%;}  
+  .header-icons {
+    width: 100%;
+    margin: var(--size-40) 0;
+  }  
 
 
   /*Benefits Section*/
   .benefits {grid-template-columns: repeat(2, 1fr)}
+  .prospective-text a {margin: 0;}
 
 
   /*Prospective Section*/
@@ -105,4 +109,84 @@
     grid-template-columns: repeat(2, 1fr);
     width: 50%;
   }
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+  /*Navbar*/
+  [aria-expanded="false"] ~ .nav .navbar-nav-wrapper {display: none;}
+  [aria-expanded="true"] ~ .nav .navbar-nav-wrapper {height: 18.75rem;}
+  [aria-expanded="true"] ~ .nav .navbar-nav {flex-direction: column;}
+
+
+  /*Benefits Section*/
+  .benefits {grid-template-columns: 1fr;}
+  .benefit-card {text-align: left;}
+
+
+  /*Why Section*/
+  .reasons-wrapper {flex-direction: column;}
+
+  .reason {
+    display: flex;
+    align-items: center;
+  }
+
+  .circle-outer { margin: 0 var(--size-20);}
+
+
+  /*Director Hightlight Section*/
+  .dots {
+    top: 5rem;
+  }
+
+
+  /*Companies Section*/
+  .company-logos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 18.75rem;
+  }
+
+
+  /*Pricing*/
+  .price-benefits-wrapper {grid-template-columns: 1fr;}
+
+
+  /*Survey*/
+  .interest {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--size-30);
+  }
+
+  .hire-us-wrapper {padding: 0;}
+  .general-info {grid-template-columns: 1fr;}
+
+
+  /*Footer*/
+  footer {text-align: center;}
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--size-20);
+  }
+
+  .links-wrapper {grid-template-columns: 1fr;}
+  .legal-social-wrapper,
+  .socials-wrapper {
+    flex-direction: column;
+  }
+
+  .legal-social-wrapper {align-items: center;}
+  .legal-links {margin-bottom: var(--size-50);}
+  .socials-wrapper {width: 50%;}
+  .socials {width: 100%;}
+  .country {width: fit-content;}
+  .spacing {margin-bottom: var(--size-30);}
 }
