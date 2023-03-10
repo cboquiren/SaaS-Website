@@ -33,7 +33,7 @@
   }
 
   [aria-expanded="true"] ~ .nav .navbar-nav-wrapper .navbar-nav {width: 100%;}
-  [aria-expanded="true"] ~ .nav .navbar-nav-wrapper #buy {width: 25%;}
+  [aria-expanded="true"] ~ .nav .navbar-nav-wrapper #buy {width: fit-content;}
 
 
   /*Section 1*/
@@ -67,7 +67,6 @@
   }
 
   .director-image {margin-bottom: var(--size-100);}
-  .dots {top: 12rem;}
   .quote {padding: var(--size-50);}
 
 
@@ -135,12 +134,6 @@
   }
 
   .circle-outer { margin: 0 var(--size-20);}
-
-
-  /*Director Hightlight Section*/
-  .dots {
-    top: 5rem;
-  }
 
 
   /*Companies Section*/

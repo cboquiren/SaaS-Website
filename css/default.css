@@ -71,6 +71,11 @@ img {
   transition: ease-in-out 0.3s;
 }
 
+@keyframes card {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.1);}
+}
+
 .sketch {
   background-color: var(--sketch);
   color: var(--white);

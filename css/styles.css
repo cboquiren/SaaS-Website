@@ -156,6 +156,8 @@
   box-shadow: 0px 5px 10px var(--text);
 }
 
+.benefit-card:hover {animation: card 300ms ease-in-out 0s 1 normal both;}
+
 .benefit-card p {
   line-height: var(--size-25);
   color: var(--text);
@@ -254,10 +256,10 @@
 
 .dots {
   position: absolute;
-  width: 14rem;
+  width: 48%;
   z-index: -10;
-  top: 6rem;
-  left: -1rem;
+  top: 20%;
+  left: -4%;
 }
 
 .director {
@@ -362,8 +364,9 @@
 
 
 /*Survey*/
+.hiring {background-color: rgba(16, 43, 93, 1);}
+
 .survey {
-  background-color: rgba(16, 43, 93, 1);
   display: flex;
   align-items: center;
 }
