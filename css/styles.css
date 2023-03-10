@@ -95,34 +95,34 @@
   width: 4rem;
 }
 
-.google {
+.icon-1 {
   top: -5%;
   left: 10%;
 }
 
-.atlassian {
+.icon-2 {
   top: -17%;
   left: 35%;
 }
 
-.asana {
+.icon-3 {
   top: -32%;
   left: 80%;
 }
 
-.paypal {top: -15%;}
+.icon-4 {top: -15%;}
 
-.weave {
+.icon-5 {
   top: -30%;
   left: 55%;
 }
 
-.drive {
+.icon-6 {
   top: -20%;
   left: 25%;
 }
 
-.calendar {
+.icon-7 {
   top: -25%;
   left: 75%;
 }
