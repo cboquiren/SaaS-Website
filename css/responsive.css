@@ -147,6 +147,7 @@
 
   /*Pricing*/
   .price-benefits-wrapper {grid-template-columns: 1fr;}
+  .pricing .benefit-card {text-align: center;}
 
 
   /*Survey*/
